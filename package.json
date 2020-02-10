@@ -6,10 +6,16 @@
   "scripts": {
     "test": "jest"
   },
+  "husky": {
+    "hooks": {
+      "pre-push": "npm run test"
+    }
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "husky": "^4.2.1",
     "jest": "^25.1.0"
   }
 }
