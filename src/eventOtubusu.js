@@ -9,7 +9,7 @@ var EventOtobusu = function() {
             subscriptions[type] = [handler];
         }
 
-        return that.unsubscribe.bind(type, handler);
+        return that.unsubscribe.bind(this, type, handler);
     };
 
     that.publish = function(type, arg) {
